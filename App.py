@@ -94,7 +94,6 @@ for user in get_nomes(values): # Loop para gerar as mensagens para cada aluno
   news = generate_ai_news(user)
   print(news)
   user['news'].append({
-      "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
       "description": news
   })
   

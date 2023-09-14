@@ -11,7 +11,7 @@ para extrair dados usei a [API do google sheets](https://developers.google.com/s
 Com os dados separados chegou a hora de transforma-los com uma IA Generativa, o ChatGPT. Usando a própria [API disponibilizada pela OPENAI](https://platform.openai.com/docs/api-reference/authentication) no site deles, é capaz de criar textos usando inteligência artificial de ponta, mas é claro com um custo.
 
 # Load
-Aqui foi onde eu parei, mas a ideia continua a mesma, Pegar essa mensagem e envia-lá individualmente para cada email com a biblioteca [SMTPL]()
+Aqui foi onde eu parei, mas a ideia continua a mesma, Pegar essa mensagem e envia-lá individualmente para cada email com a biblioteca [SMTPL](https://docs.python.org/3/library/smtplib.html)
 
 # Expectativa
 Este foi o meu primeiro projeto em Python, por isso é um trabalho improvisado, mas espero poder criar outros envolvendo ainda mais a ciência de dados. Essa ideia foi inspirada por uma atividade do [Santander Bootcamp 2023 - Ciência de Dados com Python](https://web.dio.me/track/71477949-f762-43c6-9bf2-9cf3d7f61d4a)

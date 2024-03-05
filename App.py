@@ -1,11 +1,11 @@
 from __future__ import print_function
 import os.path
-from googleapiclient.discovery import build
-from google_auth_oauthlib.flow import InstalledAppFlow
-from google.auth.transport.requests import Request
-from google.oauth2.credentials import Credentials
-import google.auth
-from googleapiclient.errors import HttpError
+from googleapiclient.discovery import build # Importa a biblioteca de acesso a API do Google Sheets
+from google_auth_oauthlib.flow import InstalledAppFlow # Importa a biblioteca de autenticação do Google
+from google.auth.transport.requests import Request # Importa a biblioteca de requisições do Google
+from google.oauth2.credentials import Credentials # Importa a biblioteca de credenciais do Google
+import google.auth # Importa a biblioteca de autenticação do Google
+from googleapiclient.errors import HttpError # Importa a biblioteca de erros do Google
 
 
 # define o escopo de acesso da API do Google Sheets
@@ -44,8 +44,6 @@ def main(): # Função para verificar credenciais e acessar a planilha
 values = main()# Chama a função main para acessar a planilha
 
 
-#print(values) # Imprime os valores da planilha
-
 def get_nomes(values): # Função para retornar os nomes dos alunos
     nomes = []
     for i in range(1, len(values)):
@@ -70,7 +68,9 @@ print(get_ajuda(values)) # Imprime se o aluno precisa de ajuda
 users = get_nomes(values) # Atribui os nomes dos alunos a variavel use
 
 
-import openai
+# Parte generativa de texto
+
+import openai # Importa a biblioteca OpenAI
 
 openai.api_key = "SUA CHAVE DE API AQUI"
 

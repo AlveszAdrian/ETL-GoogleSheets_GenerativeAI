@@ -13,7 +13,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly'] # Define o es
 
 
 
-def main(): # Função para verificar credenciais e acessar a planilha
+def main(): # Função principal para acessar a planilha
     creds = None
 
     if os.path.exists('token.json'):
